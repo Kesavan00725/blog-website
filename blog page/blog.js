@@ -8,7 +8,7 @@
             const totalItems = items.length;
             const itemsToShow = window.innerWidth <= 768 ? 1 : (window.innerWidth <= 1024 ? 2 : 3);
             const maxIndex = Math.max(0, totalItems - itemsToShow);
-
+            
             if (carouselId === 'blogCarousel') {
                 blogCurrentIndex += direction;
                 if (blogCurrentIndex < 0) blogCurrentIndex = maxIndex;
