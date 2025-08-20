@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velammal Engineering College Computer Science Blog</title>
-    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='secondstyle.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -15,10 +15,10 @@
             <div class="header-content">
                 <div class="logo">
                     <div class="logo-icon">
-                        <img src="your-logo.png" alt="Watersmal Engineering College Logo" class="logo-image">
+                        <img src="static/logo.png" alt="Watersmal Engineering College Logo" class="logo-image">
                     </div>
                     <div class="logo-text">
-                        <h1>velammal Engineering College Computer Science Blog</h1>
+                        <h1>Velammal Engineering College Computer Science Blog</h1>
                         <p>Thoughts and Trends from the world of Computer Science</p>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
             <section class="trending-section">
                 <div class="trending-card">
                     <div class="trending-image">
-                        <img src="Rectangle 2.jpg" alt="Trending post background">
+                        <img src="static/Rectangle 2.jpg" alt="Trending post background">
                         <div class="trending-overlay">
                             <div class="trending-badge">Trending</div>
                             <h2 class="trending-title">
@@ -59,7 +59,7 @@
                         <div class="carousel-track" id="blogCarousel">
                             <article class="carousel-item">
                                 <div class="post-image">
-                                    <img src="Rectangle 4.jpg" alt="Swiss house">
+                                    <img src="static/Rectangle 4.jpg" alt="Swiss house">
                                 </div>
                                 <div class="post-content">
                                     <div class="post-meta">
@@ -72,7 +72,7 @@
 
                             <article class="carousel-item">
                                 <div class="post-image">
-                                    <img src="Rectangle 5.jpg" alt="Forest">
+                                    <img src="static/Rectangle 5.jpg" alt="Forest">
                                 </div>
                                 <div class="post-content">
                                     <div class="post-meta">
@@ -85,7 +85,7 @@
 
                             <article class="carousel-item">
                                 <div class="post-image">
-                                    <img src="Rectangle 5.jpg" alt="Seascape">
+                                    <img src="static/Rectangle 6.jpg" alt="Seascape">
                                 </div>
                                 <div class="post-content">
                                     <div class="post-meta">
@@ -98,7 +98,7 @@
 
                             <article class="carousel-item">
                                 <div class="post-image">
-                                    <img src="Rectangle 6.jpg" alt="Workspace">
+                                    <img src="static/Rectangle 6.jpg" alt="Workspace">
                                 </div>
                                 <div class="post-content">
                                     <div class="post-meta">
@@ -111,7 +111,7 @@
 
                             <article class="carousel-item">
                                 <div class="post-image">
-                                    <img src="Rectangle 7.jpg" alt="Mountain">
+                                    <img src="static/Rectangle 7.jpg" alt="Mountain">
                                 </div>
                                 <div class="post-content">
                                     <div class="post-meta">
@@ -140,7 +140,7 @@
                         <div class="carousel-track video-carousel" id="videoCarousel">
                             <article class="carousel-item video-item">
                                 <div class="video-thumbnail" id="video1">
-                                    <img src="Rectangle 7.jpg" alt="CS50 Harvard">
+                                    <img src="static/Rectangle 7.jpg" alt="CS50 Harvard">
                                     <div class="play-button" onclick="playVideo('video1','8mAITcNt710')">
                                         <i class="fas fa-play"></i>
                                     </div>
@@ -217,7 +217,7 @@
                 <h2 class="section-title">Most Popular</h2>
                 <article class="popular-post">
                     <div class="post-image">
-                        <img src="Tranquil Scholarly Reading Room.png" alt="Palm trees">
+                        <img src="static/Tranquil Scholarly Reading Room.png" alt="Palm trees">
                     </div>
                     <div class="post-overlay">
                         <div class="post-content">
@@ -225,7 +225,7 @@
                                 <span class="post-date">March 08, 2024</span>
                                 <span class="post-category">Travel</span>
                             </div>
-                            <h3 class="post-title">Do You Know</h3>
+                            <h3 class="post-title">Top Programming Languages for 2025</h3>
                             <p class="post-excerpt">
                                 Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui.
                             </p>
@@ -243,7 +243,7 @@
                 <div class="footer-section">
                     <div class="footer-logo">
                         <div class="logo-icon">
-                           <img src="your-logo.png" alt="Velammal Engineering College Logo" class="logo-image">
+                           <img src="static/logo.png" alt="Velammal Engineering College Logo" class="logo-image">
                         </div>
                         <div class="logo-text">
                             <h3>Velammal Engineering College</h3>
@@ -254,7 +254,7 @@
                         Sharing insights, trends, and innovations from the world of Computer Science and Engineering.
                     </p>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
@@ -264,7 +264,7 @@
                         <li><a href="#">Archives</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4>Categories</h4>
                     <ul class="footer-links">
@@ -274,7 +274,7 @@
                         <li><a href="#">Research</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4>Follow Us</h4>
                     <div class="social-links">
@@ -285,7 +285,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <div class="footer-bottom-content">
                     <p>&copy; 2024 Velammal Engineering College. All rights reserved.</p>
@@ -297,88 +297,8 @@
             </div>
         </div>
     </footer>
-
-    <script src="blog.js">
-//         // Carousel functionality
-//         let blogCurrentIndex = 0;
-//         let videoCurrentIndex = 0;
-
-//         function moveCarousel(carouselId, direction) {
-//             const carousel = document.getElementById(carouselId);
-//             const items = carousel.children;
-//             const totalItems = items.length;
-//             const itemsToShow = window.innerWidth <= 768 ? 1 : (window.innerWidth <= 1024 ? 2 : 3);
-//             const maxIndex = Math.max(0, totalItems - itemsToShow);
-
-//             if (carouselId === 'blogCarousel') {
-//                 blogCurrentIndex += direction;
-//                 if (blogCurrentIndex < 0) blogCurrentIndex = maxIndex;
-//                 if (blogCurrentIndex > maxIndex) blogCurrentIndex = 0;
-//                 carousel.style.transform = `translateX(-${blogCurrentIndex * (100 / itemsToShow)}%)`;
-//             } else if (carouselId === 'videoCarousel') {
-//                 videoCurrentIndex += direction;
-//                 if (videoCurrentIndex < 0) videoCurrentIndex = maxIndex;
-//                 if (videoCurrentIndex > maxIndex) videoCurrentIndex = 0;
-//                 carousel.style.transform = `translateX(-${videoCurrentIndex * (100 / itemsToShow)}%)`;
-//             }
-//         }
-
-//         // function playVideo(videoId) {
-//         //     alert(`Playing video: ${videoId}\n\nNote: This is a demo. In a real implementation, this would open a video player or navigate to a video page.`);
-//         // }
-//         function playVideo(containerId, youtubeId) {
-//     const container = document.getElementById(containerId);
-//     container.innerHTML = `
-//         <iframe width="100%" height="250"
-//             src="https://youtu.be/LfaMVlDaQ24?si=PKpw1IPaP9VUa0ir${youtubeId}?autoplay=1&rel=0"
-//             frameborder="0"
-//             allow="autoplay; encrypted-media"
-//             allowfullscreen>
-//         </iframe>
-//     `;
-// }
-
-
-//         // Auto-play carousel (optional)
-//         setInterval(() => {
-//             moveCarousel('blogCarousel', 1);
-//         }, 5000);
-
-//         setInterval(() => {
-//             moveCarousel('videoCarousel', 1);
-//         }, 6000);
-
-//         // Handle window resize
-//         window.addEventListener('resize', () => {
-//             blogCurrentIndex = 0;
-//             videoCurrentIndex = 0;
-//             document.getElementById('blogCarousel').style.transform = 'translateX(0)';
-//             document.getElementById('videoCarousel').style.transform = 'translateX(0)';
-//         });
-
-//         // Smooth scrolling for navigation links
-//         document.addEventListener('DOMContentLoaded', function() {
-//             const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
-            
-//             navLinks.forEach(link => {
-//                 link.addEventListener('click', function(e) {
-//                     e.preventDefault();
-                    
-//                     const targetId = this.getAttribute('href');
-//                     const targetSection = document.querySelector(targetId);
-                    
-//                     if (targetSection) {
-//                         const headerHeight = document.querySelector('.header').offsetHeight;
-//                         const targetPosition = targetSection.offsetTop - headerHeight - 20;
-                        
-//                         window.scrollTo({
-//                             top: targetPosition,
-//                             behavior: 'smooth'
-//                         });
-//                     }
-//                 });
-//             });
-//         });
+    <script src="static/blog.js">
     </script>
+
 </body>
 </html>

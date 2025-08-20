@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -107,7 +108,7 @@ img {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    height: 400px;
+    height: 500px;
 }
 
 .trending-image {
@@ -614,24 +615,24 @@ img {
     .carousel-container {
         margin: 0 40px;
     }
-    
+
     .carousel-item {
         flex: 0 0 calc(50% - 15px);
     }
-    
+
     .video-carousel .carousel-item {
         flex: 0 0 calc(50% - 15px);
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
-    
+
     .trending-overlay {
         padding: 40px;
     }
-    
+
     .trending-title {
         font-size: 28px;
     }
@@ -643,54 +644,54 @@ img {
         gap: 20px;
         text-align: center;
     }
-    
+
     .nav {
         gap: 20px;
     }
-    
+
     .carousel-container {
         margin: 0 20px;
     }
-    
+
     .carousel-item {
         flex: 0 0 100%;
         min-width: auto;
     }
-    
+
     .video-carousel .carousel-item {
         flex: 0 0 100%;
     }
-    
+
     .carousel-btn {
         width: 40px;
         height: 40px;
         font-size: 14px;
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 30px;
         text-align: center;
     }
-    
+
     .footer-bottom-content {
         flex-direction: column;
         gap: 15px;
         text-align: center;
     }
-    
+
     .trending-overlay {
         padding: 30px;
     }
-    
+
     .trending-title {
         font-size: 24px;
     }
-    
+
     .section-title {
         font-size: 28px;
     }
-    
+
     .container {
         padding: 0 15px;
     }
@@ -700,49 +701,49 @@ img {
     .logo-text h1 {
         font-size: 16px;
     }
-    
+
     .logo-text p {
         font-size: 11px;
     }
-    
+
     .carousel-container {
         margin: 0 10px;
     }
-    
+
     .carousel-btn {
         width: 35px;
         height: 35px;
         font-size: 12px;
     }
-    
+
     .carousel-btn.prev {
         left: 5px;
     }
-    
+
     .carousel-btn.next {
         right: 5px;
     }
-    
+
     .trending-overlay {
         padding: 20px;
     }
-    
+
     .trending-title {
         font-size: 20px;
     }
-    
+
     .trending-excerpt {
         font-size: 14px;
     }
-    
+
     .post-content {
         padding: 20px;
     }
-    
+
     .post-overlay {
         padding: 40px 20px 20px;
     }
-    
+
     .post-overlay .post-title {
         font-size: 24px;
     }
