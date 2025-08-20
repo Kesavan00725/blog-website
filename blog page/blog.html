@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watersmal Engineering College Computer Science Blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="your-logo.png" alt="Watersmal Engineering College Logo" class="logo-image">
+                    </div>
+                    <div class="logo-text">
+                        <h1>velammal Engineering College Computer Science Blog</h1>
+                        <p>Thoughts and Trends from the world of Computer Science</p>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a href="#blog-section" class="nav-link">Blog</a>
+                    <a href="#video-section" class="nav-link">Videos</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Trending Section -->
+            <section class="trending-section">
+                <div class="trending-card">
+                    <div class="trending-image">
+                        <img src="Tranquil Scholarly Reading Room.png" alt="Trending post background">
+                        <div class="trending-overlay">
+                            <div class="trending-badge">Trending</div>
+                            <h2 class="trending-title">
+                                Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                            </h2>
+                            <p class="trending-excerpt">
+                                Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Latest Blog Posts Carousel -->
+            <section class="blog-carousel-section" id="blog-section">
+                <h2 class="section-title">Latest Blog Posts</h2>
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track" id="blogCarousel">
+                            <article class="carousel-item">
+                                <div class="post-image">
+                                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" alt="Swiss house">
+                                </div>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <span class="post-date">March 24, 2024</span>
+                                        <span class="post-category">Architecture</span>
+                                    </div>
+                                    <h3 class="post-title">Lqnerrr Iravoorr plokme žendria uuu</h3>
+                                </div>
+                            </article>
+
+                            <article class="carousel-item">
+                                <div class="post-image">
+                                    <img src="Tranquil Scholarly Reading Room.png" alt="Forest">
+                                </div>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <span class="post-date">March 22, 2024</span>
+                                        <span class="post-category">Nature</span>
+                                    </div>
+                                    <h3 class="post-title">Beautiful Forest Landscapes</h3>
+                                </div>
+                            </article>
+
+                            <article class="carousel-item">
+                                <div class="post-image">
+                                    <img src="Tranquil Scholarly Reading Room.png" alt="Seascape">
+                                </div>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <span class="post-date">March 20, 2024</span>
+                                        <span class="post-category">Travel</span>
+                                    </div>
+                                    <h3 class="post-title">Ocean Views and Coastal Beauty</h3>
+                                </div>
+                            </article>
+
+                            <article class="carousel-item">
+                                <div class="post-image">
+                                    <img src="Tranquil Scholarly Reading Room.png" alt="Workspace">
+                                </div>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <span class="post-date">March 18, 2024</span>
+                                        <span class="post-category">Lifestyle</span>
+                                    </div>
+                                    <h3 class="post-title">Modern Workspace Design</h3>
+                                </div>
+                            </article>
+
+                            <article class="carousel-item">
+                                <div class="post-image">
+                                    <img src="Tranquil Scholarly Reading Room.png" alt="Mountain">
+                                </div>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <span class="post-date">March 16, 2024</span>
+                                        <span class="post-category">Adventure</span>
+                                    </div>
+                                    <h3 class="post-title">Mountain Peak Adventures</h3>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveCarousel('blogCarousel', -1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" onclick="moveCarousel('blogCarousel', 1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Video Blog Carousel Section -->
+            <section class="video-blog-section" id="video-section">
+                <h2 class="section-title">Video Blog</h2>
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track video-carousel" id="videoCarousel">
+                            <article class="carousel-item video-item">
+                                <div class="video-thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" alt="Mountain landscape">
+                                    <div class="play-button" onclick="playVideo('video1')">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="video-content">
+                                    <div class="post-meta">
+                                        <span class="post-date">March 12, 2024</span>
+                                        <span class="post-category">Travel</span>
+                                    </div>
+                                    <h3 class="post-title">Mountain Landscape Journey</h3>
+                                </div>
+                            </article>
+
+                            <article class="carousel-item video-item">
+                                <div class="video-thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" alt="Beach">
+                                    <div class="play-button" onclick="playVideo('video2')">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="video-content">
+                                    <div class="post-meta">
+                                        <span class="post-date">March 10, 2024</span>
+                                        <span class="post-category">Nature</span>
+                                    </div>
+                                    <h3 class="post-title">Peaceful Beach Waves</h3>
+                                </div>
+                            </article>
+
+                            <article class="carousel-item video-item">
+                                <div class="video-thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" alt="Forest">
+                                    <div class="play-button" onclick="playVideo('video3')">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="video-content">
+                                    <div class="post-meta">
+                                        <span class="post-date">March 8, 2024</span>
+                                        <span class="post-category">Nature</span>
+                                    </div>
+                                    <h3 class="post-title">Deep Forest Exploration</h3>
+                                </div>
+                            </article>
+
+                            <article class="carousel-item video-item">
+                                <div class="video-thumbnail">
+                                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" alt="Architecture">
+                                    <div class="play-button" onclick="playVideo('video4')">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="video-content">
+                                    <div class="post-meta">
+                                        <span class="post-date">March 6, 2024</span>
+                                        <span class="post-category">Architecture</span>
+                                    </div>
+                                    <h3 class="post-title">Traditional Swiss Architecture</h3>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveCarousel('videoCarousel', -1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" onclick="moveCarousel('videoCarousel', 1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Most Popular Section -->
+            <section class="popular-section">
+                <h2 class="section-title">Most Popular</h2>
+                <article class="popular-post">
+                    <div class="post-image">
+                        <img src="Tranquil Scholarly Reading Room.png" alt="Palm trees">
+                    </div>
+                    <div class="post-overlay">
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">March 08, 2024</span>
+                                <span class="post-category">Travel</span>
+                            </div>
+                            <h3 class="post-title">Do You Know</h3>
+                            <p class="post-excerpt">
+                                Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                           <img src="your-logo.png" alt="Watersmal Engineering College Logo" class="logo-image">
+                        </div>
+                        <div class="logo-text">
+                            <h3>velammal Engineering College</h3>
+                            <p>Computer Science Blog</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Sharing insights, trends, and innovations from the world of Computer Science and Engineering.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Latest Posts</a></li>
+                        <li><a href="#">Video Blog</a></li>
+                        <li><a href="#">Most Popular</a></li>
+                        <li><a href="#">Archives</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Computer Science</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Engineering</a></li>
+                        <li><a href="#">Research</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Watersmal Engineering College. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Carousel functionality
+        let blogCurrentIndex = 0;
+        let videoCurrentIndex = 0;
+
+        function moveCarousel(carouselId, direction) {
+            const carousel = document.getElementById(carouselId);
+            const items = carousel.children;
+            const totalItems = items.length;
+            const itemsToShow = window.innerWidth <= 768 ? 1 : (window.innerWidth <= 1024 ? 2 : 3);
+            const maxIndex = Math.max(0, totalItems - itemsToShow);
+
+            if (carouselId === 'blogCarousel') {
+                blogCurrentIndex += direction;
+                if (blogCurrentIndex < 0) blogCurrentIndex = maxIndex;
+                if (blogCurrentIndex > maxIndex) blogCurrentIndex = 0;
+                carousel.style.transform = `translateX(-${blogCurrentIndex * (100 / itemsToShow)}%)`;
+            } else if (carouselId === 'videoCarousel') {
+                videoCurrentIndex += direction;
+                if (videoCurrentIndex < 0) videoCurrentIndex = maxIndex;
+                if (videoCurrentIndex > maxIndex) videoCurrentIndex = 0;
+                carousel.style.transform = `translateX(-${videoCurrentIndex * (100 / itemsToShow)}%)`;
+            }
+        }
+
+        function playVideo(videoId) {
+            alert(`Playing video: ${videoId}\n\nNote: This is a demo. In a real implementation, this would open a video player or navigate to a video page.`);
+        }
+
+        // Auto-play carousel (optional)
+        setInterval(() => {
+            moveCarousel('blogCarousel', 1);
+        }, 5000);
+
+        setInterval(() => {
+            moveCarousel('videoCarousel', 1);
+        }, 6000);
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            blogCurrentIndex = 0;
+            videoCurrentIndex = 0;
+            document.getElementById('blogCarousel').style.transform = 'translateX(0)';
+            document.getElementById('videoCarousel').style.transform = 'translateX(0)';
+        });
+
+        // Smooth scrolling for navigation links
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        const headerHeight = document.querySelector('.header').offsetHeight;
+                        const targetPosition = targetSection.offsetTop - headerHeight - 20;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
