@@ -1,20 +1,21 @@
 .trending-card .post-excerpt {
     display: block;
-    overflow: visible;
-    text-overflow: unset;
-    white-space: normal;
+    overflow: visible;       /* allow full text */
+    white-space: normal;     /* wrap normally */
+    word-break: break-word;  /* handle long words */
+    
+    width: 100%;             /* fit container */
+    max-width: 800px;        /* optional: control line length */
+    
+    margin: none;          /* center horizontally */
+    padding: 0px 0;         /* space top & bottom */
 
-    max-width: 100%;     /* use full available width */
-    width: 200%;         /* stretch fully */
-    margin: none;      /* keep centered if inside container */
-
-    font-size: 1.25rem;
-    line-height: 1.6;
-    word-break: break-word;
-    padding: none;     /* spacing left & right */
-    box-sizing: border-box;
-    text-align: left;    /* align like screenshot */
+    font-size: 1rem;         /* base text size */
+    line-height: 1.6;        /* good readability */
+    color: #fff;             /* white text over dark background */
+    text-align: left;        /* align left */
 }
+
 
 
 
@@ -110,6 +111,9 @@
 }
 
 @media (max-width: 600px) {
+    .trending-card .post-excerpt {
+        display: none;
+    }
     .container {
         max-width: 100vw;
         padding: 0 2px;
