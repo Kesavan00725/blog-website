@@ -111,6 +111,9 @@
 }
 
 @media (max-width: 600px) {
+    .popular-post .post-excerpt {
+        display: none;
+    }
     .trending-card .post-excerpt {
         display: none;
     }
