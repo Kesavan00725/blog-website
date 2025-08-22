@@ -1,3 +1,189 @@
+.trending-card .post-excerpt {
+    display: block;
+    overflow: visible;
+    text-overflow: unset;
+    white-space: normal;
+
+    max-width: 100%;     /* use full available width */
+    width: 200%;         /* stretch fully */
+    margin: none;      /* keep centered if inside container */
+
+    font-size: 1.25rem;
+    line-height: 1.6;
+    word-break: break-word;
+    padding: none;     /* spacing left & right */
+    box-sizing: border-box;
+    text-align: left;    /* align like screenshot */
+}
+
+
+
+/* Enhanced Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+    .header-content, .footer-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 900px;
+    }
+    .header-content, .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .nav {
+        gap: 18px;
+    }
+    .carousel-item, .video-carousel .carousel-item {
+        flex: 0 0 100%;
+        min-width: auto;
+    }
+    .carousel-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 98vw;
+        padding: 0 8px;
+    }
+    .header-content, .footer-content {
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+    }
+    .logo {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .logo-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+    .logo-text h1 {
+        font-size: 17px;
+    }
+    .logo-text p {
+        font-size: 11px;
+    }
+    .main {
+        padding: 20px 0;
+    }
+    .carousel-container {
+        margin: 0 4px;
+    }
+    .carousel-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+    }
+    .section-title {
+        font-size: 20px;
+    }
+    .trending-title {
+        font-size: 18px;
+    }
+    .trending-excerpt {
+        font-size: 13px;
+    }
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        text-align: center;
+    }
+    .footer-bottom-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100vw;
+        padding: 0 2px;
+    }
+    .header {
+        padding: 10px 0;
+    }
+    .main {
+        padding: 10px 0;
+    }
+    .carousel-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 10px;
+    }
+    .carousel-container {
+        margin: 0 2px;
+    }
+    .section-title {
+        font-size: 16px;
+    }
+    .trending-title {
+        font-size: 15px;
+    }
+    .trending-excerpt {
+        font-size: 12px;
+    }
+    .post-content, .video-content {
+        padding: 8px 0;
+    }
+    .view-btn {
+        padding: 6px 12px !important;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo-text h1 {
+        font-size: 13px;
+    }
+    .logo-text p {
+        font-size: 9px;
+    }
+    .section-title {
+        font-size: 13px;
+    }
+    .trending-title {
+        font-size: 12px;
+    }
+    .trending-excerpt {
+        font-size: 10px;
+    }
+    .view-btn {
+        padding: 4px 8px !important;
+        font-size: 11px;
+    }
+}
+/* View Button Custom Style */
+.view-btn {
+    background: #000 !important;
+    color: #fff !important;
+    border: 2.5px solid #000 !important;
+    border-radius: 6px !important;
+    padding: 8px 20px !important;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.view-btn:hover, .view-btn:focus {
+    background: #222 !important;
+    color: #fff !important;
+    border-color: #222 !important;
+}
 
 * {
     margin: 0;
@@ -50,7 +236,7 @@ img {
 .logo-icon {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background: linear-gradient(135deg, #eff2f5 0%, #ffffff 100%);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -125,16 +311,24 @@ img {
 
 .trending-overlay {
     position: absolute;
-    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+    padding: 32px 28px 24px 28px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.55) 40%, rgba(0,0,0,0.15) 80%, rgba(0,0,0,0) 100%);
+    color: #fff;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 60px;
-    color: white;
+    align-items: flex-start;
+    justify-content: flex-end;
+    min-height: 120px;
+}
+.trending-title, .trending-excerpt, .trending-badge {
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
 
 .trending-badge {
@@ -163,7 +357,7 @@ img {
     font-size: 16px;
     line-height: 1.6;
     opacity: 0.9;
-    max-width: 500px;
+    max-width: 100%;
 }
 
 /* Blog Carousel Section */

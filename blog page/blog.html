@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velammal Engineering College Computer Science Blog</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='secondstyle.css') }}">
+    <link rel="stylesheet" type="text/css" href="blog.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -15,7 +15,7 @@
             <div class="header-content">
                 <div class="logo">
                     <div class="logo-icon">
-                        <img src="static/logo.png" alt="Watersmal Engineering College Logo" class="logo-image">
+                        <img src="Screenshot_2025-08-22_204658-removebg-preview.png" alt="velammal Engineering College Logo" class="logo-image">
                     </div>
                     <div class="logo-text">
                         <h1>Velammal Engineering College Computer Science Blog</h1>
@@ -35,20 +35,22 @@
         <div class="container">
             <!-- Trending Section -->
             <section class="trending-section">
-                <div class="trending-card">
-                    <div class="trending-image">
+                <article class="trending-card">
+                    <div class="post-image">
                         <img src="static/Rectangle 2.jpg" alt="Trending post background">
-                        <div class="trending-overlay">
-                            <div class="trending-badge">Trending</div>
-                            <h2 class="trending-title">
-                                The Man Who Turns Science Fiction Into Reality
-                            </h2>
-                            <p class="trending-excerpt">
-                              Elon Musk is one of the world’s most influential tech entrepreneurs, known for Tesla, SpaceX, and his futuristic vision. From electric cars to space exploration, he continues to push the boundaries of technology and inspire millions worldwide
+                    </div>
+                    <div class="post-overlay">
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="trending-badge">Trending</span>
+                            </div>
+                            <h2 class="post-title">The Man Who Turns Science Fiction Into Reality</h2>
+                            <p class="post-excerpt">
+                                Elon Musk is one of the world’s most influential tech entrepreneurs, known for Tesla, SpaceX, and his futuristic vision. From electric cars to space exploration, he continues to push the boundaries of technology and inspire millions worldwide
                             </p>
                         </div>
                     </div>
-                </div>
+                </article>
             </section>
 
             <!-- Latest Blog Posts Carousel -->
@@ -67,6 +69,7 @@
                                         <span class="post-category">Technology</span>
                                     </div>
                                     <h3 class="post-title">AI-Powered Smart Cities Emerging in the US</h3>
+                                    <a href="#" class="view-btn" target="_blank" style="display:inline-block;margin-top:8px;padding:6px 16px;background:#34495e;color:#fff;border-radius:4px;text-decoration:none;">View</a>
                                 </div>
                             </article>
 
@@ -80,6 +83,7 @@
                                         <span class="post-category">Tech</span>
                                     </div>
                                     <h3 class="post-title">Harvard Researchers Develop AI That Predicts Cyber Threats</h3>
+                                    <a href="#" class="view-btn" target="_blank" style="display:inline-block;margin-top:8px;padding:6px 16px;background:#34495e;color:#fff;border-radius:4px;text-decoration:none;">View</a>
                                 </div>
                             </article>
 
@@ -93,6 +97,7 @@
                                         <span class="post-category">Technology</span>
                                     </div>
                                     <h3 class="post-title">London Tech Startups Revolutionizing Quantum Computing</h3>
+                                    <a href="#" class="view-btn" target="_blank" style="display:inline-block;margin-top:8px;padding:6px 16px;background:#34495e;color:#fff;border-radius:4px;text-decoration:none;">View</a>
                                 </div>
                             </article>
 
@@ -106,6 +111,7 @@
                                         <span class="post-category">Technology</span>
                                     </div>
                                     <h3 class="post-title">AI-Powered Healthcare Solutions Around the World</h3>
+                                    <a href="#" class="view-btn" target="_blank" style="display:inline-block;margin-top:8px;padding:6px 16px;background:#34495e;color:#fff;border-radius:4px;text-decoration:none;">View</a>
                                 </div>
                             </article>
 
@@ -118,7 +124,8 @@
                                         <span class="post-date">August 19, 2025</span>
                                         <span class="post-category">Technology</span>
                                     </div>
-                                    <h3 class="post-title">Lqmerrr travoox plokme zendria uuu</h3>
+                                    <h3 class="post-title">AI-Powered Healthcare Solutions Around the World</h3>
+                                    <a href="#" class="view-btn" target="_blank" style="display:inline-block;margin-top:8px;padding:6px 16px;background:#34495e;color:#fff;border-radius:4px;text-decoration:none;">View</a>
                                 </div>
                             </article>
                         </div>
@@ -138,9 +145,10 @@
                 <div class="carousel-container">
                     <div class="carousel-wrapper">
                         <div class="carousel-track video-carousel" id="videoCarousel">
+
                             <article class="carousel-item video-item">
                                 <div class="video-thumbnail" id="video1">
-                                    <img src="static/Rectangle 7.jpg" alt="CS50 Harvard">
+                                    <img src="https://img.youtube.com/vi/8mAITcNt710/hqdefault.jpg" alt="CS50 Harvard">
                                     <div class="play-button" onclick="playVideo('video1','8mAITcNt710')">
                                         <i class="fas fa-play"></i>
                                     </div>
@@ -151,45 +159,48 @@
                                         <span class="post-category">Technology</span>
                                     </div>
                                     <h3 class="post-title">🎓 CS50: Harvard’s Most Popular Computer Science Course</h3>
+                                    <a href="https://www.youtube.com/watch?v=8mAITcNt710" class="view-btn" target="_blank" style="display:inline-block;margin-top:8px;padding:6px 16px;background:#e74c3c;color:#fff;border-radius:4px;text-decoration:none;">View</a>
                                 </div>
                             </article>
 
                             <article class="carousel-item video-item">
-                                <div class="video-thumbnail">
-                                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" alt="Beach">
-                                    <div class="play-button" onclick="playVideo('video2')">
+                                <div class="video-thumbnail" id="video2">
+                                    <img src="https://img.youtube.com/vi/wXqBIIeNWe8/hqdefault.jpg" alt="Peaceful Beach Waves">
+                                    <div class="play-button" onclick="playVideo('video2','wXqBIIeNWe8')">
                                         <i class="fas fa-play"></i>
                                     </div>
                                 </div>
                                 <div class="video-content">
                                     <div class="post-meta">
                                         <span class="post-date">March 10, 2024</span>
-                                        <span class="post-category">Nature</span>
+                                        <span class="post-category">Technology</span>
                                     </div>
-                                    <h3 class="post-title">Peaceful Beach Waves</h3>
+                                    <h3 class="post-title">Why Samsung, Google And Possibly Apple Are Investing In Folding Smartphones</h3>
+                                    <a href="https://youtu.be/wXqBIIeNWe8?si=lQI2npinL-yY6yQ9" class="view-btn" target="_blank" style="display:inline-block;margin-top:8px;padding:6px 16px;background:#e74c3c;color:#fff;border-radius:4px;text-decoration:none;">View</a>
                                 </div>
                             </article>
 
                             <article class="carousel-item video-item">
-                                <div class="video-thumbnail">
-                                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" alt="Forest">
-                                    <div class="play-button" onclick="playVideo('video3')">
+                                <div class="video-thumbnail" id="video3">
+                                    <img src="https://img.youtube.com/vi/5MWT_doo68k/hqdefault.jpg" alt="Deep Forest Exploration">
+                                    <div class="play-button" onclick="playVideo('video3','5qap5aO4i9A')">
                                         <i class="fas fa-play"></i>
                                     </div>
                                 </div>
                                 <div class="video-content">
                                     <div class="post-meta">
                                         <span class="post-date">March 8, 2024</span>
-                                        <span class="post-category">Nature</span>
+                                        <span class="post-category">AI</span>
                                     </div>
-                                    <h3 class="post-title">Deep Forest Exploration</h3>
+                                    <h3 class="post-title">OpenAI’s Sam Altman Talks ChatGPT, AI Agents and Superintelligence — Live at TED2025</h3>
+                                    <a href="https://www.youtube.com/live/5MWT_doo68k?si=yYQcWdbK1mCcB5vR" class="view-btn" target="_blank" style="display:inline-block;margin-top:8px;padding:6px 16px;background:#e74c3c;color:#fff;border-radius:4px;text-decoration:none;">View</a>
                                 </div>
                             </article>
 
                             <article class="carousel-item video-item">
-                                <div class="video-thumbnail">
-                                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" alt="Architecture">
-                                    <div class="play-button" onclick="playVideo('video4')">
+                                <div class="video-thumbnail" id="video4">
+                                    <img src="https://img.youtube.com/vi/1IxG7ywSNXk/hqdefault.jpg" alt="Traditional Swiss Architecture">
+                                    <div class="play-button" onclick="playVideo('video4','aqz-KE-bpKQ')">
                                         <i class="fas fa-play"></i>
                                     </div>
                                 </div>
@@ -198,7 +209,8 @@
                                         <span class="post-date">March 6, 2024</span>
                                         <span class="post-category">Architecture</span>
                                     </div>
-                                    <h3 class="post-title">Traditional Swiss Architecture</h3>
+                                    <h3 class="post-title">TGoogle CEO Sundar Pichai on the future of search, AI agents, and selling Chrome</h3>
+                                    <a href="https://youtu.be/1IxG7ywSNXk?si=MN19jNczXcBjYd1m" class="view-btn" target="_blank" style="display:inline-block;margin-top:8px;padding:6px 16px;background:#e74c3c;color:#fff;border-radius:4px;text-decoration:none;">View</a>
                                 </div>
                             </article>
                         </div>
@@ -243,7 +255,7 @@
                 <div class="footer-section">
                     <div class="footer-logo">
                         <div class="logo-icon">
-                           <img src="static/logo.png" alt="Velammal Engineering College Logo" class="logo-image">
+                           <img src="Screenshot_2025-08-22_204658-removebg-preview.png" alt="Velammal Engineering College Logo" class="logo-image">
                         </div>
                         <div class="logo-text">
                             <h3>Velammal Engineering College</h3>
@@ -258,7 +270,7 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Latest Posts</a></li>
+                        <li><a href="https://www.instagram.com/vec_chennai/">Latest Posts</a></li>
                         <li><a href="#">Video Blog</a></li>
                         <li><a href="#">Most Popular</a></li>
                         <li><a href="#">Archives</a></li>
@@ -268,20 +280,20 @@
                 <div class="footer-section">
                     <h4>Categories</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Computer Science</a></li>
-                        <li><a href="#">Technology</a></li>
-                        <li><a href="#">Engineering</a></li>
-                        <li><a href="#">Research</a></li>
+                        <li><a href="https://velammal.edu.in/dept/005">Computer Science</a></li>
+                        <li><a href="https://velammal.edu.in/dept/005">Technology</a></li>
+                        <li><a href="https://velammal.edu.in/programs">Engineering</a></li>
+                        <li><a href="https://velammal.edu.in/dept/005">Research</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-section">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/velammalengineeringcollege/" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/velammalenggc?lang=en" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/school/velammal-engineering-college/posts/?feedView=all" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@velammalengineeringcollege1816" class="social-link"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
@@ -297,7 +309,7 @@
             </div>
         </div>
     </footer>
-    <script src="static/blog.js">
+    <script src="blog.js">
     </script>
 
 </body>

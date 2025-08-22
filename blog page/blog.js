@@ -22,9 +22,9 @@
             }
         }
 
-        // function playVideo(videoId) {
-        //     alert(`Playing video: ${videoId}\n\nNote: This is a demo. In a real implementation, this would open a video player or navigate to a video page.`);
-        // }
+         function playVideo(videoId) {
+        alert(`Playing video: ${videoId}\n\nNote: This is a demo. In a real implementation, this would open a video player or navigate to a video page.`);
+        }
         function playVideo(containerId, youtubeId) {
     const container = document.getElementById(containerId);
     container.innerHTML = `
