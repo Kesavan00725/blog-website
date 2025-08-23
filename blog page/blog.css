@@ -3,10 +3,10 @@
     overflow: visible;       /* allow full text */
     white-space: normal;     /* wrap normally */
     word-break: break-word;  /* handle long words */
-    
+
     width: 100%;             /* fit container */
     max-width: 800px;        /* optional: control line length */
-    
+
     margin: none;          /* center horizontally */
     padding: 0px 0;         /* space top & bottom */
 
