@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <meta name="description" content="A beautiful, responsive article card component with modern design">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='Screenshot_2025-08-22_204658-removebg-preview.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page1.css') }}">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: #fafafa;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 16px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article class="article-card">
+            <div class="article-content">
+                <!-- Image Section -->
+                <div class="article-image-section">
+                    <img src="{{ url_for('static', filename='Modern Minimalist Home Office.png') }}" alt="Modern Eames-style chair with wooden legs" class="article-image" />
+                </div>
+
+                <!-- Content Section -->
+                <div class="article-text-section">
+                    <!-- Meta Information -->
+                    <div class="article-meta">
+                        <span class="article-meta-separator">•</span>
+                        <span>August 29, 2025</span>
+                    </div>
+
+                    <!-- Title -->
+                    <h1 class="article-title">
+                        Home Offices Reimagined for the Hybrid Era
+                    </h1>
+
+                    <!-- Excerpt -->
+                    <p class="article-excerpt">
+                       Remote work has transformed the way we think about our daily grind. Instead of rigid cubicles, people are designing home offices that balance comfort and productivity. Minimalist desks, cozy aesthetics, and flexible setups have become the norm. Modern laptops, cloud-based apps, and collaboration platforms allow seamless work from anywhere, making it easier than ever to stay connected with teams across the globe. This shift isn’t just about convenience—it’s about creating workspaces that support mental well-being, creativity, and efficiency, all while embracing the freedom of location-independent work.
+                </div>
+            </div>
+        </article>
+    </div>
+</body>
+</html>

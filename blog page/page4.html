@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <meta name="description" content="A beautiful, responsive article card component with modern design">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='Screenshot_2025-08-22_204658-removebg-preview.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page1.css') }}">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: #fafafa;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 16px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article class="article-card">
+            <div class="article-content">
+                <!-- Image Section -->
+                <div class="article-image-section">
+                    <img src="{{ url_for('static', filename='100408_Yard_045-1200x630.webp') }}" alt="Harvard University" class="article-image" />
+                </div>
+
+                <!-- Content Section -->
+                <div class="article-text-section">
+                    <!-- Meta Information -->
+                    <div class="article-meta">
+                        <span class="article-meta-separator">•</span>
+                        <span>August 29, 2025</span>
+                    </div>
+
+                    <!-- Title -->
+                    <h1 class="article-title">
+                        Harvard’s AI Shield: The Future of Cybersecurity
+                    </h1>
+
+                    <!-- Excerpt -->
+                    <p class="article-excerpt">
+                       Harvard University is redefining the future of cybersecurity by harnessing the power of artificial intelligence. Their latest AI models can analyze vast amounts of network activity in real time and detect potential cyber attacks before they even occur. This proactive defense approach helps create smarter, safer networks and significantly reduces the risk of data breaches. The breakthrough is influencing tech companies worldwide, encouraging them to integrate AI-driven security systems to protect sensitive information in an increasingly connected digital world.
+                </div>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
